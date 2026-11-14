@@ -1,0 +1,9 @@
+{
+  "name": "小小星球日記 | Debby's Tamagotchi Diary",
+  "short_name": "小小星球日記",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffaf0",
+  "theme_color": "#f5a4b8",
+  "icons": [{ "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

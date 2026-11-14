@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+  <rect width="800" height="480" fill="#f4d77b"/>
+  <g fill="none" stroke="#342b35" stroke-width="4" opacity=".18"><path d="M0 80h800M0 160h800M0 240h800M0 320h800M0 400h800M80 0v480M160 0v480M240 0v480M320 0v480M400 0v480M480 0v480M560 0v480M640 0v480M720 0v480"/></g>
+  <rect x="230" y="95" width="340" height="290" rx="15" fill="#fffdf8" stroke="#342b35" stroke-width="6" transform="rotate(-3 400 240)"/>
+  <circle cx="340" cy="195" r="32" fill="#f5a4b8"/>
+  <path d="m270 325 92-85 62 50 47-44 72 80Z" fill="#afcfae" stroke="#342b35" stroke-width="5" stroke-linejoin="round"/>
+  <text x="400" y="432" text-anchor="middle" fill="#342b35" font-family="monospace" font-size="18" letter-spacing="4">YOUR PHOTO HERE</text>
+</svg>
