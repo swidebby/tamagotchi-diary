@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="小小星球日記 — 編輯式設計實驗版，依照 Cup of Couple / Refero DESIGN.md 的視覺語言重製。">
+  <meta name="robots" content="noindex,follow">
+  <title>小小星球日記 — Editorial Preview</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="../content.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+  <div class="preview-note">
+    <div class="wrap preview-note-inner"><span>DESIGN EXPERIMENT / REFERO STYLE APPLICATION</span><a href="../">返回原版網站 ↗</a></div>
+  </div>
+  <div class="wrap">
+    <section class="top-stories" aria-label="專題故事">
+      <p class="micro top-stories-heading">FEATURED STORIES — 001 / 003</p>
+      <div class="top-story-grid">
+        <a class="top-story" href="#diary">
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Tamagotchis.jpg/960px-Tamagotchis.jpg" alt="三部電子寵物及手提電腦，示範用參考照片" loading="eager">
+          <span class="top-story-text"><span class="micro">01 / DIARY</span><span>那些值得記住的小日子</span></span>
+        </a>
+        <a class="top-story" href="#collection">
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Tamagotchi_%289174345467%29.jpg/960px-Tamagotchi_%289174345467%29.jpg" alt="幾部復古電子寵物，示範用參考照片" loading="eager">
+          <span class="top-story-text"><span class="micro">02 / COLLECTION</span><span>收藏一個掌上宇宙</span></span>
+        </a>
+        <a class="top-story" href="#mini-pet">
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/David%27s_Tamagotchi.jpg/500px-David%27s_Tamagotchi.jpg" alt="手持電子寵物特寫，示範用參考照片" loading="eager">
+          <span class="top-story-text"><span class="micro">03 / TINY FRIEND</span><span>一起照顧小小訪客</span></span>
+        </a>
+      </div>
+    </section>
+    <header class="masthead" id="top">
+      <p class="micro">AN UNOFFICIAL PERSONAL VISUAL DIARY / EST. 2025</p>
+      <a class="wordmark" href="#top" aria-label="回到小小星球日記頂部">小小星球日記</a>
+      <p class="masthead-sub">DEBBY'S TAMAGOTCHI DIARY <span aria-hidden="true">—</span> MACAO</p>
+    </header>
+    <nav class="primary-nav" aria-label="主要導覽">
+      <div class="nav-links">
+        <a href="#diary">VISUAL DIARY</a>
+        <a href="#collection">COLLECTION</a>
+        <a href="#about">ABOUT</a>
+        <a href="#mini-pet">TINY FRIEND</a>
+      </div>
+      <button class="search-toggle" type="button" aria-controls="search-panel" aria-expanded="false" data-search-toggle><em>Search…</em> <span aria-hidden="true">⌕</span></button>
+    </nav>
+    <form class="search-panel" id="search-panel" role="search" hidden data-search-form>
+      <label for="diary-search">搜尋日記 / SEARCH JOURNAL</label>
+      <input id="diary-search" name="q" type="search" placeholder="標題、型號、關鍵字…" autocomplete="off" data-search-input>
+      <button type="button" data-search-clear>清除</button>
+    </form>
+    <main id="main">
+      <section class="feature section" aria-labelledby="hero-title">
+        <p class="micro feature-label">EDITOR'S NOTE / 01 — WELCOME TO MY TINY UNIVERSE</p>
+        <div class="feature-grid">
+          <div class="feature-photo">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Tamagotchis.jpg/960px-Tamagotchis.jpg" alt="電子寵物收藏參考照片，非網站作者私人藏品" fetchpriority="high">
+            <span class="photo-indicator micro">REFERENCE PHOTOGRAPH / NOT DEBBY'S COLLECTION</span>
+          </div>
+          <div class="feature-copy">
+            <p class="micro">A TINY PET. A WHOLE LITTLE UNIVERSE.</p>
+            <h1 id="hero-title">把每一段小小的成長，好好收藏。</h1>
+            <div class="hairline"></div>
+            <p>這裡記下我與電子寵物一起生活的片段——不同的角色、意外的進化，還有平凡日子裡讓人微笑的小驚喜。</p>
+            <a class="editorial-link" href="#diary">EXPLORE THE DIARY <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+      <section class="diary section" id="diary" aria-labelledby="diary-title">
+        <div class="section-head">
+          <div><p class="micro">02 / VISUAL DIARY</p><h2 id="diary-title">星球日誌</h2><p class="section-intro">記下每個值得留住的小小時刻。</p></div>
+          <div class="filter-group" role="group" aria-label="日記分類" data-filters></div>
+        </div>
+        <p class="micro results-line" data-result-count aria-live="polite"></p>
+        <div class="diary-grid" data-diary-list aria-live="polite"></div>
+        <p class="editor-note">註：目前部分日記為「待填寫」範例，並非本人真實經歷。未上載個人照片前，本實驗版以獲開放授權之歷史電子寵物照片展示設計效果；照片所示物件不代表本人收藏。</p>
+      </section>
+      <section class="collection section" id="collection" aria-labelledby="collection-title">
+        <div class="section-head">
+          <div><p class="micro">03 / COLLECTION</p><h2 id="collection-title">我的掌上小宇宙</h2><p class="section-intro">每一部機都有自己的個性，也收藏着不同的期待。</p></div>
+          <p class="micro section-aside">AN ONGOING ARCHIVE</p>
+        </div>
+        <div class="collection-grid" data-collection-list></div>
+        <p class="editor-note">收藏資料仍屬待填寫範例；外部參考照片只作版面示範，並非所列型號之實物照片。</p>
+      </section>
+      <section class="about section" id="about" aria-labelledby="about-title">
+        <div class="section-head"><div><p class="micro">04 / ABOUT THE JOURNAL</p><h2 id="about-title">每一隻電子寵物，都是一段獨一無二的故事。</h2></div></div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>我喜歡電子寵物帶來的未知感：今天會遇見哪個角色？下一個成長階段會是甚麼模樣？即使只是餵食、玩耍和看牠安睡，也能讓普通的一天多一點期待。</p>
+            <p>「小小星球日記」就是用來保存這些日常的角落。沒有攻略，也不是官方網站；只是我的私人手帳，慢慢收集每次相遇和驚喜。</p>
+            <p class="signature">— Debby</p>
+          </div>
+          <aside class="about-index" aria-label="手帳分類">
+            <p class="micro">THIS JOURNAL COLLECTS</p>
+            <div><span class="micro">01</span><span>成長記錄</span></div>
+            <div><span class="micro">02</span><span>日常片段</span></div>
+            <div><span class="micro">03</span><span>收藏手帳</span></div>
+          </aside>
+        </div>
+      </section>
+      <section class="tiny-friend section" id="mini-pet" aria-labelledby="pet-title">
+        <div class="section-head"><div><p class="micro">05 / TINY FRIEND</p><h2 id="pet-title">來照顧這位小小訪客吧！</h2></div></div>
+        <div class="pet-grid">
+          <div class="pet-copy"><p>牠住在你的瀏覽器裡。餵牠、陪牠玩，或讓牠好好睡一會；下次回來，牠還會記得你。</p>
+            <div class="pet-stats">
+              <div class="stat"><div class="stat-label"><span>MOOD / 心情</span><span data-mood-value>72</span></div><div class="meter"><span data-mood-bar></span></div></div>
+              <div class="stat"><div class="stat-label"><span>ENERGY / 體力</span><span data-energy-value>64</span></div><div class="meter"><span data-energy-bar></span></div></div>
+            </div>
+            <p class="micro pet-note">LOCAL SAVE / YOUR BROWSER ONLY</p>
+          </div>
+          <div class="pet-game">
+            <div class="game-screen">
+              <div class="screen-top micro"><span>TINY PLANET / 001</span><span>● LIVE</span></div>
+              <div class="pet-sprite" data-pet-sprite aria-label="原創像素寵物圖像">
+                <span class="sprite-ear ear-left"></span><span class="sprite-ear ear-right"></span>
+                <span class="sprite-head"><span class="sprite-eye eye-left"></span><span class="sprite-eye eye-right"></span><span class="sprite-mouth"></span></span>
+                <span class="sprite-foot foot-left"></span><span class="sprite-foot foot-right"></span>
+              </div>
+              <p class="pet-message" data-pet-message aria-live="polite">今天也一起玩吧！</p>
+            </div>
+            <div class="pet-controls" aria-label="迷你寵物操作">
+              <button type="button" data-pet-action="feed">餵食 <small>FEED</small></button>
+              <button type="button" data-pet-action="play">玩耍 <small>PLAY</small></button>
+              <button type="button" data-pet-action="rest">休息 <small>REST</small></button>
+            </div>
+            <button class="reset-pet" type="button" data-pet-reset>RESET PET / 重設寵物狀態</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-top"><span>DEBBY'S TAMAGOTCHI DIARY / AN INDEPENDENT FAN JOURNAL</span><a href="#top">BACK TO TOP ↑</a></div>
+      <div class="footer-mid">
+        <div><p class="micro">PHOTO CREDITS (PREVIEW ONLY)</p><p><a href="https://commons.wikimedia.org/wiki/File:Tamagotchis.jpg" target="_blank" rel="noopener noreferrer">xmacex — Tamagotchis</a> (CC BY-SA 2.0), <a href="https://commons.wikimedia.org/wiki/File:Tamagotchi_(9174345467).jpg" target="_blank" rel="noopener noreferrer">Chester — Tamagotchi</a> (CC BY 2.0), <a href="https://commons.wikimedia.org/wiki/File:David%27s_Tamagotchi.jpg" target="_blank" rel="noopener noreferrer">David — David's Tamagotchi</a> (public domain). Photos shown cropped by CSS; source files unchanged.</p></div>
+        <div><p class="micro">DESIGN REFERENCE</p><p><a href="https://styles.refero.design/style/f4e1b510-6085-4fb8-8597-05d479d3c00c" target="_blank" rel="noopener noreferrer">Cup of Couple — Refero Styles DESIGN.md</a></p></div>
+      </div>
+      <p class="copyright micro">© <span data-year></span> DEBBY · NON-OFFICIAL PERSONAL DIARY · DESIGN EXPERIMENT, NOT AFFILIATED WITH BANDAI OR CUP OF COUPLE.</p>
+    </footer>
+  </div>
+</body>
+</html>
